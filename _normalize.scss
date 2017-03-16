@@ -1,5 +1,11 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+$normalize-body-font-family: sans-serif !default;
+
 /* Document
    ========================================================================== */
 
@@ -11,7 +17,7 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: $normalize-body-font-family; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -254,7 +260,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
+  font-family: $normalize-body-font-family; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
