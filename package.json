@@ -1,12 +1,12 @@
 {
-  "name": "normalize.css",
-  "version": "5.0.0",
-  "description": "A modern alternative to CSS resets",
-  "main": "normalize.css",
-  "style": "normalize.css",
+  "name": "@remobid/normalize",
+  "version": "1.0.0",
+  "description": "A SCSS version of necolas/normalize.css",
+  "main": "_normalize.scss",
+  "style": "_normalize.scss",
   "files": [
     "LICENSE.md",
-    "normalize.css"
+    "_normalize.scss"
   ],
   "devDependencies": {
     "stylelint": "^7.3.1",
@@ -15,10 +15,11 @@
   "scripts": {
     "test": "stylelint normalize.css"
   },
-  "repository": "necolas/normalize.css",
+  "repository": "remobid/normalize.css",
   "contributors": [
     "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com/)",
-    "Nicolas Gallagher <nicolas@nicolasgallagher.com> (http://nicolasgallagher.com/)"
+    "Nicolas Gallagher <nicolas@nicolasgallagher.com> (http://nicolasgallagher.com/)",
+    "Lars Haßler <mail@larshassler.com>"
   ],
   "license": "MIT",
   "bugs": "https://github.com/necolas/normalize.css/issues",
