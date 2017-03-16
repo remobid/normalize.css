@@ -14,10 +14,12 @@ $normalize-body-font-family: sans-serif !default;
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
+ * 4. Set font-size to 10px instead of 16 to enable an easier workflow with rem
  */
 
 html {
   font-family: $normalize-body-font-family; /* 1 */
+  font-size: (10 / 16 * 100%); /* 4 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
