@@ -6,6 +6,13 @@
 
 $normalize-body-font-family: sans-serif !default;
 
+$normalize-body-bg: #fff !default;
+$normalize-body-font-color: #000 !default;
+$normalize-link-color: blue !default;
+
+$normalize-mark-bg-color: #ff0 !default;
+$normalize-mark-color: #000 !default;
+
 /* Document
    ========================================================================== */
 
@@ -29,11 +36,16 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers (opinionated).
+ * 1. Remove the margin in all browsers (opinionated).
+ * 2. Enable font-smoothing in Webkit and FF
  */
 
 body {
-  margin: 0;
+  margin: 0; /* 1 */
+  background: $normalize-body-bg;
+  color: $normalize-body-font-color;
+  -webkit-font-smoothing: antialiased; /* 3 */
+  -moz-osx-font-smoothing: grayscale; /* 3 */
 }
 
 /**
@@ -113,6 +125,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: $normalize-link-color;
 }
 
 /**
@@ -179,8 +192,8 @@ dfn {
  */
 
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: $normalize-mark-bg-color;
+  color: $normalize-mark-color;
 }
 
 /**
